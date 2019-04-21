@@ -1,0 +1,43 @@
+#background-main{
+    background: white;
+}
+
+h1,h2,h3,h4,h5{
+    color: #c42a2a;
+}
+
+p{
+    color: red;
+}
+
+a{
+    color: red;
+}
+
+
+
+/*Home section*/
+
+.home h3{
+    font-size: 1rem;
+}
+
+.home h1{
+    letter-spacing: 0.2em;
+    font-weight: bolder;
+    font-size: 4rem;
+}
+
+/*About section*/
+
+.about{
+    background: #f0d0d0;
+}
+
+.about xmp{
+    color: green;
+}
+
+.about hr{
+    background: rgba(0, 0, 0, 0.08);
+}

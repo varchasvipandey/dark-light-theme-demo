@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--Meta Tags-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <title>Module-1</title>
+        
+        <!--Styles-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="css/style.css" type="text/css" rel="stylesheet">
+    </head>
+    
+    <body id="background-main" onload="wantTo()">
+        
+        <div class="container-fluid">
+            <div class="row navigation">
+                <div class="col-sm-12">
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                          <a class="nav-link active" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Visuals</a>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="#" onclick="toDark()">Dark Theme</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#" onclick="toLight()">Light Theme</a>
+                            </div>
+                      </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mt-5 ml-2 home">
+                <div class="col-sm-6 mt-5">
+                    <h3>Document Object Model</h3>
+                </div>
+                <div class="w-100"></div>
+                <div class="col-sm-6">
+                    <h1>IN-ACTION</h1>
+                </div>
+                <div class="w-100"></div>
+                <div class="col-sm-6 mb-5">
+                    <p>This is just a basic illustration of how the trending dark-light themed websites work.</p>
+                </div>
+            </div>
+            <div class="row mt-5 about" id="aboutSection">
+                <div class="col-sm-12 mt-5 pt-1 pl-5">
+                    <h2>About</h2>
+                    <hr>
+                    <p>This is a module made by Varchasvi which is made just to illustrate how the dark-light mode system actually works on websites. The core functionality is made using Javascript only, without using any special library or framework like JQuery, AngularJS etc.</p>
+                    <p>You can check out how he made this by following the code mentioned below.</p>
+                    <h4><i>Javascript Code</i></h4>
+                    <hr>
+                    <xmp>
+                        <!--Sample Code here-->
+function wantTo(){
+    var want = confirm("Do you want use this page in dark mode?")
+        if(want){
+            toDark();
+        } else {
+            toLight();
+        }    
+    }
+                    </xmp>
+                    <hr>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <!--Scripts and libraries-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
